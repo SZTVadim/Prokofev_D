@@ -14,7 +14,7 @@ for value in student.values():
 
 # ЗАДАНИЕ 2
 
-prices = prices = {
+prices = {
     "яблоко": 50,
     "банан": 30,
     "апельсин": 40,
