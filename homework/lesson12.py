@@ -14,7 +14,7 @@ numbers = [15, -8, 23, -5, 0, 42, -12, 7]
 positive_number = [x for x in numbers if x > 0]
 print(positive_number)
 
-abs_numbers = [abs(x) for x in numbers if x < 0 ]
+abs_numbers = [abs(x) for x in numbers if x < 0]
 print(abs_numbers)
 
 tuple_new = tuple(x ** 2 for x in numbers)
