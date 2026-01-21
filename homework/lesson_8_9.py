@@ -36,11 +36,7 @@ print(discount_prices)
 student1 = {"имя": "Иван", "возраст": 20, "курс": 2}
 student2 = {"имя": "Мария", "возраст": 21, "город": "Санкт-Петербург"}
 
-student1.update(student2)
-print(student1)
-
-student3 = student1.copy()
-student3.update(student2)
+student3 = {**student1, **student2}
 
 print(student1)
 print(student2)
