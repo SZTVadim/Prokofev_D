@@ -8,7 +8,7 @@ headers = {
     "Content-Type": "application/json",
 }
 
-#POST
+# POST
 data_for_post = {
     "id": PET_ID,
     "category": {"id": 1, "name": "МЕДОЕДЫ"},
@@ -31,7 +31,7 @@ if response_post.status_code == 200:
 else:
     print("POST failed")
 
-#GET
+# GET
 response_get = requests.get(
     f"{BASE_URL}/pet/{PET_ID}",
     headers={"accept": "application/json"},
@@ -44,7 +44,7 @@ if response_get.status_code == 200:
 else:
     print("GET failed")
 
-#PUT
+# PUT
 data_for_put = {
     "id": PET_ID,
     "category": {"id": 1, "name": "МЕДОЕДЫ"},
@@ -67,7 +67,7 @@ if response_put.status_code == 200:
 else:
     print("PUT failed")
 
-#DELETE
+# DELETE
 response_delete = requests.delete(
     f"{BASE_URL}/pet/{PET_ID}",
     headers={"accept": "application/json"},
